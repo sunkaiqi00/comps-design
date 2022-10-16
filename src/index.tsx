@@ -3,13 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Button from './Button';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <Button>button</Button>
+    &nbsp;
+    <Button className="cust-btn">class button</Button>
+    &nbsp;
+    <Button type="primary">primary button</Button>
   </React.StrictMode>
 );
 
